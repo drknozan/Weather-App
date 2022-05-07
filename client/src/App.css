@@ -1,0 +1,133 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background-color: var(--primary-color-1);
+    height: 95vh;
+    width: 95vw;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-title {
+    color: var(--text-color-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: .5rem;
+}
+
+.app-search-input {
+    height: 2vh;
+    width: 30vw;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--text-color-dark);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 1rem;
+    transition: all .3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app-search-input:focus {
+    outline-style: none;
+    transform: scale(1.02);
+}
+
+.app-search-button {
+    height: 2.5rem;
+    width: 7rem;
+    color: var(--text-color-light);
+    background-color: var(--primary-color-3);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.app-search-button:active {
+    transform: scale(.97);
+}
+
+.alert {
+    color: var(--text-color-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.tab {
+    display: flex;
+    background-color: var(--primary-color-3);
+    width: 90%;
+    margin-top: 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.tab-btn {
+    background-color: #261268;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    color: var(--text-color-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.tab-btn:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.tab-btn:hover {
+    background-color: #361a91;
+}
+
+.weather {
+    width: 90%;
+    height: 60vh;
+    margin: 0 1rem 1.5rem 1rem;
+    background-color: var(--primary-color-3);
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.current-weather {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-weather-info {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 0 0 6vw;
+    color: var(--text-color-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.current-weather img {
+    height: 40vh;
+    width: 30vw;
+    object-fit: cover;
+    border-radius: 1rem;
+    opacity: .9;
+    margin: 5vh 6vw 0 0;
+}
+
+.detailed-weather {
+    color: var(--text-color-light);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    padding: 1rem;
+}
