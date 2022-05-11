@@ -10,6 +10,32 @@ You can display the current weather conditions in any city. I built this app to 
 
 > For more detailed information click the "More Details" button.
 
+## :rocket: Run
+
+To run this app on your local machine:
+
+1. Clone the repo.
+
+2. Create ".env" file in "server" folder.
+
+3. Put your OpenWeatherMap API key inside ".env" file:
+```
+API_KEY= Your API Key
+```
+4. Install required dependencies in server folder and start the server:
+```
+npm install
+node server.js
+```
+
+5. Install required dependencies in client folder and start the react app:
+```
+npm install
+npm start
+```
+
+6. You can view the app on http://localhost:3000
+
 ##  :computer: Built With
 
 * React
